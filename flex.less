@@ -28,6 +28,11 @@ p {
     flex-grow: 2;
     background: #fefefe;
 }
+#example.flex {
+    flex: 1;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
 #links {
     display: flex;
     justify-content: space-between;
@@ -99,22 +104,34 @@ p {
 #flex-example-4 {
     padding: @base_unit;
     box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex: 1;
 }
 #flex-example-1 {
     background: #ddd;
 }
 #flex-example-2{
     background: #eee;
+    flex-direction: column;
+}
+#flex-example-2 p{
+  margin: 0;
+  align-items: center;
+} 
+#flex-example-2 img {
+    margin: @base_unit/2;
+}
+#flex-example-2 p,
+#flex-example-2 span{
+    flex: 1;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 #flex-example-3{
     background: #ccc;
     overflow: auto;
-    align-items: center;
-    width: 10000px;
-}
-#flex-example-3 img{
-    height: 100%;
-    justify-content: space-between;
+    white-space: nowrap;
 }
 #flex-example-4{
     background: #fff;
@@ -181,5 +198,30 @@ p {
 .flex-fun-10 {
      justify-content: space-between ;
  }
+ .ducked {
+   display: none;
+ }
+.flex-fun-11 .ducked,
+.flex-fun-13 .ducked,
+.flex-fun-12 .ducked {
+  display: block;
+}
+.flex-fun-12  {
+  flex-wrap: wrap;
+}
+.flex-fun-13  {
+  flex-wrap: wrap;
+  align-content: center;
+}
 
-
+.menu-flex.final {
+  align-items: center;
+}
+.final .menu-item{
+  background: none;
+  border: none;
+}
+.menu-flex.final h2{
+  color: #fff;
+  margin: 0;
+}
