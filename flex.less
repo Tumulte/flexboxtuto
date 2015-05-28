@@ -1,0 +1,185 @@
+@import './incipitCSS/less/styles.less';
+@color_type: 'op';
+@dominant: #9cd2a7;
+
+body {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1, h2, h3 {
+    padding-left: @base_unit/2/1.78;
+}
+main {
+    font-size: 1.5em;
+}
+p {
+    padding: @base_unit/2;
+}
+.buttonified {
+    margin: @base_unit/2;
+}
+.buttonified:visited {
+    background: @dominant;
+    color: #fff;
+}
+#example {
+    flex-grow: 2;
+    background: #fefefe;
+}
+#links {
+    display: flex;
+    justify-content: space-between;
+    background: #eee;
+}
+#links.first  {
+    justify-content: flex-end;
+}
+.bullet-back {
+    padding: @base_unit
+}
+.bullet-back li{
+    list-style: inside;
+}
+.menu-flex {
+    display: flex;
+}
+.menu-float .menu-item {
+    float:left;
+}
+.menu-inline-block .menu-item {
+    display: inline-block;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    background: @@subdom2;
+}
+.menu-item:hover {
+    background: @color_neg;
+    color: @@subdom2;
+    cursor: pointer;
+}
+.menu-flex {
+    display: flex;
+}
+.menu-item {
+    background: @dominant;
+    color: #fff;
+    margin: 0;
+    padding: @base_unit/2 @base_unit;
+    list-style: none;
+    border: 1px solid @color_neg;
+    border-top: none;
+}
+.short-text {
+    display: flex;
+}
+.long-text {
+    display: flex;
+}
+.flex {
+    display: flex;
+}
+.plain-flex {
+    display: flex;
+    background: @@tonic;
+    height: 25%;
+}
+.plain-flex-inline {
+    display: inline-flex;
+    background: blue;
+    height: 1em;
+    width: 10em;
+}
+#flex-example-1 ,
+#flex-example-2 ,
+#flex-example-3 ,
+#flex-example-4 {
+    padding: @base_unit;
+    box-sizing: border-box;
+}
+#flex-example-1 {
+    background: #ddd;
+}
+#flex-example-2{
+    background: #eee;
+}
+#flex-example-3{
+    background: #ccc;
+    overflow: auto;
+    align-items: center;
+    width: 10000px;
+}
+#flex-example-3 img{
+    height: 100%;
+    justify-content: space-between;
+}
+#flex-example-4{
+    background: #fff;
+    flex-direction: column;
+    overflow: auto;
+}
+#flex-example-4 img{
+    flex-shrink: 1;
+}
+.full-height {
+    height: 100%;
+}
+#flex-fun .menu-item{
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    margin: @base_unit;
+}
+#flex-fun {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.flex-fun-1 {
+   flex-direction: row-reverse;
+}
+.flex-fun-2 {
+   flex-direction: column;
+}
+.flex-fun-3{
+   flex-direction: column-reverse;
+}
+.flex-fun-4 .menu-item,
+.flex-fun-5 .menu-item,
+.flex-fun-6 .menu-item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex: 1;
+}
+.flex-fun-5 #item-3{
+    flex-grow: 2;
+}
+.flex-fun-6 #item-3 ,
+.flex-fun-7 #item-3 {
+    flex-grow: 3;
+}
+.flex-fun-7 #item-2 {
+    flex-grow: 2;
+}
+.flex-fun-8 {
+     align-items: flex-start;
+     align-content: center;
+ }
+.flex-fun-9,
+.flex-fun-10 {
+     align-items: center;
+     align-content: center;
+ }
+.flex-fun-9 {
+     justify-content:  space-around;
+ }
+.flex-fun-10 {
+     justify-content: space-between ;
+ }
+
+
